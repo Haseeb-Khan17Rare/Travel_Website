@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+/* smooth transition for all slides */
+.my-swiper .swiper-slide {
+    transition: transform 600ms cubic-bezier(.22,.9,.35,1), opacity 600ms ease;
+    opacity: 0.45;
+    transform: scale(0.92);
+    filter: none;
+  }
+  
+  /* center slide is fully visible and slightly bigger */
+  .my-swiper .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+  }
+  
+  /* immediate neighbors are slightly more visible than the others */
+  .my-swiper .swiper-slide.swiper-slide-prev,
+  .my-swiper .swiper-slide.swiper-slide-next {
+    opacity: 0.85;
+    transform: scale(0.97);
+    z-index: 9;
+  }
+  
+  /* farther-away slides (not active or adjacent) should feel like they're disappearing */
+  .my-swiper .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) {
+    opacity: 0.25;
+    transform: scale(0.88);
+    filter: blur(0.3px);
+  }
+  
+  /* optional: make images inside transition nicely too */
+  .my-swiper .swiper-slide img {
+    transition: transform 600ms cubic-bezier(.22,.9,.35,1), opacity 600ms ease;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  

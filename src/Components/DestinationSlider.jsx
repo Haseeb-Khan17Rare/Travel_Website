@@ -8,7 +8,7 @@ import China from "../assets/China.jpg";
 import TokyoImg from "../assets/Tokyo.jpg";
 import Turkey from "../assets/Turkey.jpg";
 import DubaiImg from "../assets/Dubai.jpg";
-import Saudi_Arab from "../assets/Saudi Arab.jpg";
+import Saudi_Arab from "../assets/saudiarab.jpg";
 
 const destinations = [
   {

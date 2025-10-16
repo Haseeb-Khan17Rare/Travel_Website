@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Import your new package images
-import PakistanImg from "../assets/pakistan.jpg";
-import SaudiArabiaImg from "../assets/Saudi Arab.jpg";
-import ChinaImg from "../assets/china.jpg";
-import TurkeyImg from "../assets/turkey.jpg";
-
+import Pakistan from "../assets/Pakistan.jpg";
+import SaudiArabia from "../assets/saudiarab.jpg";
+import China from "../assets/China.jpg";
+import Turkey from "../assets/Turkey.jpg";
 const Packages = () => {
   const packages = [
     {
@@ -14,7 +13,7 @@ const Packages = () => {
       name: "Explore Pakistan",
       slug: "explore-pakistan",
       country: "Pakistan",
-      image: PakistanImg,
+      image: Pakistan,
       short: "Experience mountains, valleys, and cultural heritage across Pakistan.",
       details:
         "Discover the natural beauty and rich culture of Pakistan: visit Hunza, Skardu, Swat, and immerse yourself in local traditions and cuisine.",
@@ -27,7 +26,7 @@ const Packages = () => {
       name: "Saudi Arabia Adventure",
       slug: "saudi-arabia-adventure",
       country: "Saudi Arabia",
-      image: SaudiArabiaImg,
+      image: SaudiArabia,
       short: "Explore deserts, cities, and spiritual landmarks in Saudi Arabia.",
       details:
         "Travel through Riyadh, Jeddah, and visit Makkah and Madinah. Enjoy modern architecture, desert experiences, and rich cultural history.",
@@ -40,7 +39,7 @@ const Packages = () => {
       name: "Discover China",
       slug: "discover-china",
       country: "China",
-      image: ChinaImg,
+      image: China,
       short: "A journey through ancient history, modern cities, and iconic landmarks.",
       details:
         "Visit the Great Wall, Forbidden City, Terracotta Army, and explore bustling cities and serene landscapes across China.",
@@ -53,7 +52,7 @@ const Packages = () => {
       name: "Turkey Explorer",
       slug: "turkey-explorer",
       country: "Turkey",
-      image: TurkeyImg,
+      image: Turkey,
       short: "Experience the fusion of East and West, history, and stunning landscapes.",
       details:
         "Travel through Istanbul, Cappadocia, Pamukkale, and enjoy hot air balloons, historic sites, and local cuisine in Turkey.",

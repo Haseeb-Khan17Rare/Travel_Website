@@ -1,18 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useSelector } from "react-redux";
 import Pakistan from "../assets/Pakistan.jpg";
 import SaudiArabia from "../assets/saudiarab.jpg";
 import China from "../assets/China.jpg";
 import Turkey from "../assets/Turkey.jpg";
 
-
 const Destinations = () => {
   const traveler = useSelector((state) => state.user.traveler);
 
   const destinations = [
     { id: 1, name: "Pakistan", image: Pakistan },
-    { id: 2, name: "SaudiArab", image: SaudiArabia},
+    { id: 2, name: "Saudi Arabia", image: SaudiArabia },
     { id: 3, name: "China", image: China },
     { id: 4, name: "Turkey", image: Turkey },
   ];
